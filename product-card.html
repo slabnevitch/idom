@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Карточка товара</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!-- Здесь пишем код-->
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top-left">
+            <div class="header-burger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div><img src="img/logo.png" alt="alt">
+            <div class="header__logo-caption">Товары для дома по оптовым ценам 
+              <div>Доставка по России</div>
+            </div>
+          </div>
+          <div class="header-top-right">
+            <div class="header-top-right__top">
+              <ul class="header-top-right__menu">
+                <li><a href="#" data-tooltip-content="#conditions-tooltip" class="tooltip">Условия работы</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Скачать прайс</a></li>
+              </ul>
+              <div class="header-contacts"><a href="#callback-popup" class="header-contacts__callback callback-show">Заказать звонок</a><a href="tel:88001231212" class="header-contacts__phone">8 800 <span>123 12 12</span></a></div>
+            </div>
+            <div class="header-top-right__bottom">
+              <form action="#">
+                <label class="header-search">
+                  <input type="text" name="search" placeholder="Поиск по сайту">
+                      <svg class="icon icon-magnifier ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#magnifier"></use>
+                      </svg>
+                      <svg class="icon icon-enter ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#enter"></use>
+                      </svg>
+                </label>
+              </form>
+              <div class="header-account"><a href="#search-popup" class="header-account__item header-account__search">
+                      <svg class="icon icon-magnifier ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#magnifier"></use>
+                      </svg></a><a href="#enter-popup" class="header-account__item header-account__user popup-unregistered">
+                      <svg class="icon icon-user ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#user"></use>
+                      </svg></a><a href="#" data-tooltip-content="#cart-tooltip-favourites" class="header-account__item header-account__favorites">
+                      <svg class="icon icon-heart ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#heart"></use>
+                      </svg>
+                  <div class="favorites-count">3</div></a><a href="#" data-tooltip-content="#cart-tooltip" class="header-account__item header-account__cart">
+                      <svg class="icon icon-cart ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#cart"></use>
+                      </svg>
+                  <div class="cart-count">3</div></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container no-paddings">
+          <div class="header-catalog">
+            <div class="header-catalog__button">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div><span>каталог</span>
+          </div>
+          <div class="header__main-menu">
+            <ul class="main-menu">
+              <li><a href="#"><span>Сад и огород</span></a></li>
+              <li><a href="#"><span>Все для ремонта</span></a></li>
+              <li class="active"><a href="#"><span>Инструменты</span></a></li>
+              <li><a href="#"><span>Новинки</span></a></li>
+              <li><a href="#"><span>Хиты продаж</span></a></li>
+              <li><a href="#"><span>Акции %</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="mega-menu">
+        <div class="container"><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-piston ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#piston"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Автозапчасти</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-fuel ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#fuel"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Автохимия</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-oil ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#oil"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Маслоспецжидкости</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-hammer ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#hammer"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Отделочный инструмент</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-piston ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#piston"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Автозапчасти</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-fuel ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#fuel"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Автохимия</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-oil ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#oil"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Маслоспецжидкости</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-hammer ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#hammer"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Отделочный инструмент</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-piston ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#piston"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Автозапчасти</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-fuel ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#fuel"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Автохимия</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-oil ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#oil"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Маслоспецжидкости</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-hammer ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#hammer"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Отделочный инструмент</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-piston ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#piston"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Автозапчасти</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-fuel ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#fuel"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Автохимия</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-oil ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#oil"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Маслоспецжидкости</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-hammer ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#hammer"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Отделочный инструмент</div></a>
+        </div>
+      </section>
+    </header>
+    <div class="container mobile-nav-wrap">
+      <nav class="mobile-nav">
+        <div class="mobile-nav__top filter-mobile__list-item gray-bg"><a href="tel:88001231212" class="header-contacts__phone">8 800 <span>123 12 12</span></a><a href="#callback-popup" class="header-contacts__callback callback-show">Заказать звонок</a></div>
+        <ul class="mobile-nav__catalog">
+          <li class="filter-mobile__list-item"><a href="catalog.html">Каталог
+                  <svg class="icon icon-chev-right ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-right"></use>
+                  </svg></a></li>
+        </ul>
+        <ul class="mobile-nav__top-menu">
+          <li class="filter-mobile__list-item"><a href="#">Новинки</a></li>
+          <li class="filter-mobile__list-item"><a href="#">Хиты продаж</a></li>
+          <li class="filter-mobile__list-item"><a href="#">Акции %</a></li>
+        </ul>
+        <ul class="mobile-nav__middle-menu">
+          <li class="filter-mobile__list-item"><a href="#">Условия работы</a></li>
+          <li class="filter-mobile__list-item"><a href="#">Доставка и оплата</a></li>
+          <li class="filter-mobile__list-item"><a href="#">Контакты</a></li>
+          <li class="filter-mobile__list-item"><a href="#">Скачать прайс</a></li>
+        </ul>
+      </nav>
+    </div>
+    <section class="breadcrumbs">
+      <div class="container no-pd-480">
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Ручной инструмент</a></li>
+          <li><a href="#">Столярный инструмент</a></li>
+          <li class="active"><a href="#">Стусла</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="some-product some-product--elementary">
+      <div class="container no-pd-480">
+        <div class="title-wrapper">
+          <h2 class="text-left">Стусло прецизионное, двухплоскостное, пила - 600 мм, 2 прижимные струбцины, ограничительный упор GROSS 22</h2>
+        </div>
+      </div>
+      <div class="container some-product__info no-pd-480">
+        <div class="product-view">
+          <div class="product-display">
+            <div class="product-display__item">
+              <div class="product-display__icon-block">
+                <div class="product-display__icon icon-pers-new"></div>
+                <div class="product-display__icon icon-pers-10"></div>
+              </div><img src="img/some-product/01.jpg" alt="alt">
+            </div>
+            <div class="product-display__item">
+              <div class="product-display__icon-block">
+                <div class="product-display__icon icon-pers-new"></div>
+                <div class="product-display__icon icon-pers-10"></div>
+              </div><img src="img/some-product/nav-02.jpg" alt="alt">
+            </div>
+            <div class="product-display__item">
+              <div class="product-display__icon-block">
+                <div class="product-display__icon icon-pers-new"></div>
+                <div class="product-display__icon icon-pers-10"></div>
+              </div><img src="img/some-product/nav-03.jpg" alt="alt">
+            </div>
+            <div class="product-display__item">
+              <div class="product-display__icon-block">
+                <div class="product-display__icon icon-pers-new"></div>
+                <div class="product-display__icon icon-pers-10"></div>
+              </div><img src="img/some-product/nav-04.jpg" alt="alt">
+              <div class="play-icon"></div>
+            </div>
+          </div>
+          <div class="product-display-nav">
+            <div class="product-thumbs">
+              <div style="background-image: url(img/some-product/nav-01.jpg)" class="product-display-nav__item"></div>
+              <div style="background-image: url(img/some-product/nav-02.jpg)" class="product-display-nav__item"></div>
+              <div style="background-image: url(img/some-product/nav-03.jpg)" class="product-display-nav__item"></div>
+              <div style="background-image: url(img/some-product/nav-04.jpg)" class="product-display-nav__item">
+                <div class="play-icon"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-chars">
+          <div class="product-chars__price">
+            <div class="product-chars__price-top">
+              <div class="price-new">2300<span class="ruble">Р</span></div>
+              <div class="price-old">2300<span class="ruble">Р</span></div>
+              <div class="price-top__final">/ <span>100</span> шт</div>
+            </div>
+            <div class="product-chars__price-bottom fl gray-bg">
+              <div class="products-counter">
+                <div class="products-counter__count">5</div>
+                <div class="products-counter__handlers">
+                  <div class="products-counter__handler handler-up">
+                        <svg class="icon icon-chev-up ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-up"></use>
+                        </svg>
+                  </div>
+                  <div class="products-counter__handler handler-down">
+                        <svg class="icon icon-chev-down ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-down"></use>
+                        </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="price-total">Итого:</div>
+              <div class="price-final">11500<span class="ruble">Р</span></div>
+            </div>
+          </div>
+          <div class="product-chars__to-cart"><a href="#" class="button button-orange button-mini"><span>В корзину</span></a>
+                <svg class="icon icon-heart-fill ">
+                  <use xlink:href="img/icons-svg/symbol/sprite.svg#heart-fill"></use>
+                </svg>
+            <div class="product-chars__on-hold"><span>На складе</span>
+              <div class="on-hold-marks">
+                <div class="on-hold-mark active"></div>
+                <div class="on-hold-mark active"></div>
+                <div class="on-hold-mark active"></div>
+                <div class="on-hold-mark active"></div>
+                <div class="on-hold-mark active"></div>
+                <div class="on-hold-mark active"></div>
+                <div class="on-hold-mark active"></div>
+                <div class="on-hold-mark"></div>
+                <div class="on-hold-mark"></div>
+                <div class="on-hold-mark"></div>
+              </div>
+            </div>
+          </div>
+          <div class="product-chars__properties"><span>Характеристики:</span>
+            <p>двухплоскостное, пила-600 мм Быстросъемное пильное полотно – японская сталь SK-5. Основание – МДФ плита. Рабочий стол – ударопрочный пластик. Шкала для быстрого определения рабочей длины. </p>
+          </div>
+          <div class="product-chars__socials">
+            <div>Поделиться:</div>
+            <ul>
+              <li><a href="#" class="product-chars__social blue-tw"></a></li>
+              <li><a href="#" class="product-chars__social inst-blue"></a></li>
+              <li><a href="#" class="product-chars__social ok-blue"></a></li>
+              <li><a href="#" class="product-chars__social vk-blue"></a></li>
+              <li><a href="#" class="product-chars__social fb-blue"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="product-gifts">
+          <div class="product-gifts__top">
+            <div class="product-item__rating">
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                    </svg>
+              </div>
+            </div>
+            <div class="product-gifts__art"><span>Артикул </span><span>892341234</span></div>
+          </div>
+          <div class="product-gifts__blocks gray-bg">
+            <div class="icon-block icon-block-min">
+                  <svg class="icon icon-delivery-truck ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#delivery-truck"></use>
+                  </svg>
+              <div class="icon-block__text">
+                <div class="icon-block__header">Доставка в г. Краснодар</div>
+                <div class="icon-block__orange">300 руб.</div>
+              </div>
+            </div>
+            <div class="icon-block">
+                  <svg class="icon icon-voucher ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#voucher"></use>
+                  </svg>
+              <div class="icon-block__text">
+                <div class="icon-block__orange">+5% к скидке</div>
+                <div class="icon-block__header">постоянного клиента за заказ</div>
+              </div>
+            </div>
+            <div class="icon-block">
+                  <svg class="icon icon-surprise ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#surprise"></use>
+                  </svg>
+              <div class="icon-block__text">
+                <div class="icon-block__header">При заказе от 100 шт.</div>
+                <div class="icon-block__orange">подарок</div>
+              </div>
+            </div>
+            <div class="icon-block">
+                  <svg class="icon icon-discount ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#discount"></use>
+                  </svg>
+              <div class="icon-block__text">
+                <div class="icon-block__header">При заказе от 100 шт.</div>
+                <div class="icon-block__orange">скидка 10%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="some-product-tabs">
+      <div class="container tabs no-pd-480">
+        <ul class="tabs__list some-product__tabs-list">
+          <li class="tabs__item some-product__tabs-item"><a href="#item1" class="tabs__link">Описание</a></li>
+          <li class="tabs__item some-product__tabs-item"><a href="#item2" class="tabs__link">Характеристики</a></li>
+          <li class="tabs__item tabs__item--active some-product__tabs-item"><a href="#item3" class="tabs__link">Отзывы</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="some-product-tabs-content">
+      <ul class="tabs__content some-product__tabs-content container no-pd-480">
+        <li id="item1" class="tabs__item some-product__tabs-content-item hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque repellendus laboriosam quam, ullam beatae aut, fugiat nam maxime perferendis libero, quasi unde tenetur saepe dolor consequatur labore, iure. Fugiat, nostrum.</li>
+        <li id="item2" class="tabs__item some-product__tabs-content-item hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quasi nostrum modi debitis, neque, fugit dignissimos magni perferendis fugiat fuga, rerum, mollitia quia harum ducimus! Dolores, quidem natus voluptatem quos.</li>
+        <li id="item3" class="tabs__item some-product__tabs-content-item">
+          <form action="#" class="product-score-form container container-wide">
+            <div class="product-score__left">
+              <div class="some-product__tabs-title">Дайте оценку товару:</div>
+              <label class="standart-label"><span>Ваше имя: <span class="label-required">*</span></span>
+                <input type="text" name="score-name" required>
+              </label>
+              <label class="standart-label"><span>Email: <span class="label-required">*</span></span>
+                <input type="text" name="score-email" required>
+              </label>
+              <label class="standart-label"><span>Комментарий: <span class="label-required">*</span></span>
+                <textarea name="score-text"></textarea>
+              </label>
+              <div class="required-note"><span class="label-required">*</span> — обязательные поля</div>
+            </div>
+            <div class="product-score__right">
+              <div class="product-score__right-title">Ваша оценка:</div>
+              <div class="user-score">
+                <div class="product-item__rating product-item__rating--big">
+                  <div class="rating-star">
+                        <svg class="icon icon-rate-star-active ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                        </svg>
+                  </div>
+                  <div class="rating-star">
+                        <svg class="icon icon-rate-star-active ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                        </svg>
+                  </div>
+                  <div class="rating-star">
+                        <svg class="icon icon-rate-star-active ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                        </svg>
+                  </div>
+                  <div class="rating-star">
+                        <svg class="icon icon-rate-star-active ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                        </svg>
+                  </div>
+                  <div class="rating-star half-active">
+                        <svg class="icon icon-rate-star-half ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-half"></use>
+                        </svg>
+                  </div>
+                </div>
+                <div class="check-mark">Поставьте оценку товару и <a href="#">получите бонус</a></div>
+              </div>
+              <label class="custom-checkbox-label">
+                <input type="checkbox" name="prod-new"><span class="custom-checkbox"></span><span>Я даю согласие на обработку персональных данных</span>
+              </label>
+              <button type="submit" class="button button-orange button-orange-mini"><span>Отправить</span></button>
+            </div>
+          </form>
+        </li>
+      </ul>
+    </section>
+    <section class="some-product-reviews">
+      <div class="container">
+        <div class="title-wrapper">
+          <h2>Отзывы</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="some-product-review">
+          <div class="some-product-review__name">Закир</div>
+          <div class="product-item__rating product-item__rating--big">
+            <div class="rating-star">
+                  <svg class="icon icon-rate-star-active ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                  </svg>
+            </div>
+            <div class="rating-star">
+                  <svg class="icon icon-rate-star-active ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                  </svg>
+            </div>
+            <div class="rating-star">
+                  <svg class="icon icon-rate-star-active ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                  </svg>
+            </div>
+            <div class="rating-star">
+                  <svg class="icon icon-rate-star-active ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                  </svg>
+            </div>
+            <div class="rating-star half-active">
+                  <svg class="icon icon-rate-star-half ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-half"></use>
+                  </svg>
+            </div>
+          </div>
+          <div class="some-product-review__date">16 октября 2015 20:52</div>
+          <p class="some-product-review__text">Сама станина, куда крепится заготовка изготовлена из ударопрочного пластика, внушающего доверие. Поворотная часть изготовлена из металла. Направляющие, по которым скользит ножовка и полотно также изготовлены из ударопрочного пластика. В целом конструкция добротная. При желании, если подберёте вертикальные направляющие 4 шт, то сможете увеличить глубину просила.</p>
+        </div>
+        <div class="some-product-review">
+          <div class="some-product-review__name">Виктор</div>
+          <div class="product-item__rating product-item__rating--big">
+            <div class="rating-star">
+                  <svg class="icon icon-rate-star-active ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                  </svg>
+            </div>
+            <div class="rating-star">
+                  <svg class="icon icon-rate-star-active ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                  </svg>
+            </div>
+            <div class="rating-star">
+                  <svg class="icon icon-rate-star-active ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                  </svg>
+            </div>
+            <div class="rating-star">
+                  <svg class="icon icon-rate-star-active ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                  </svg>
+            </div>
+            <div class="rating-star half-active">
+                  <svg class="icon icon-rate-star-half ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-half"></use>
+                  </svg>
+            </div>
+          </div>
+          <div class="some-product-review__date">16 октября 2015 20:52</div>
+          <p class="some-product-review__text">Соглашусь. Отличный инстурмент. На долгие годы.</p>
+        </div>
+      </div>
+      <div class="some-product-reviews__bottom container"><a href="#" class="button button-empty button-mini"><span>ПОКАЗАТЬ ЕЩЁ</span></a></div>
+    </section>
+    <section class="concomitant">
+      <div class="container">
+        <div class="title-wrapper title-wrapper--to-slider-nav">
+          <h2>Похожие товары</h2>
+          <div class="slider-arrows"></div>
+        </div>
+      </div>
+      <div class="container related-items container-wrapper">
+        <div class="product-item">
+              <svg class="icon icon-heart-fill ">
+                <use xlink:href="img/icons-svg/symbol/sprite.svg#heart-fill"></use>
+              </svg><a href="#" class="product-item__img"><img src="img/product.jpg" alt="alt"></a><a href="#" class="product-item__title link">Сумка для инструмента GROSS</a>
+          <p class="product-item__descr">Handwerker, 42 кармана, пластик. дно, наплечный ремень</p>
+          <div class="product-item__price-block">
+            <div class="product-item__price">2300 <span class="ruble">Р</span></div>
+            <div class="product-item__rating">
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                    </svg>
+              </div>
+            </div>
+          </div>
+          <div class="product-item__float">
+            <div class="product-item__bottom">
+              <div class="products-counter">
+                <div class="products-counter__count">1</div>
+                <div class="products-counter__handlers">
+                  <div class="products-counter__handler handler-up">
+                        <svg class="icon icon-chev-up ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-up"></use>
+                        </svg>
+                  </div>
+                  <div class="products-counter__handler handler-down">
+                        <svg class="icon icon-chev-down ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-down"></use>
+                        </svg>
+                  </div>
+                </div>
+              </div><a href="#" class="button button-empty button-mini"><span>в корзину</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+              <svg class="icon icon-heart-fill ">
+                <use xlink:href="img/icons-svg/symbol/sprite.svg#heart-fill"></use>
+              </svg><a href="#" class="product-item__img"><img src="img/product.jpg" alt="alt"></a><a href="#" class="product-item__title link">Сумка для инструмента GROSS</a>
+          <p class="product-item__descr">Handwerker, 42 кармана, пластик. дно, наплечный ремень</p>
+          <div class="product-item__price-block">
+            <div class="product-item__price">2300 <span class="ruble">Р</span></div>
+            <div class="product-item__rating">
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                    </svg>
+              </div>
+            </div>
+          </div>
+          <div class="product-item__float">
+            <div class="product-item__bottom">
+              <div class="products-counter">
+                <div class="products-counter__count">1</div>
+                <div class="products-counter__handlers">
+                  <div class="products-counter__handler handler-up">
+                        <svg class="icon icon-chev-up ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-up"></use>
+                        </svg>
+                  </div>
+                  <div class="products-counter__handler handler-down">
+                        <svg class="icon icon-chev-down ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-down"></use>
+                        </svg>
+                  </div>
+                </div>
+              </div><a href="#" class="button button-empty button-mini"><span>в корзину</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+              <svg class="icon icon-heart-fill ">
+                <use xlink:href="img/icons-svg/symbol/sprite.svg#heart-fill"></use>
+              </svg><a href="#" class="product-item__img"><img src="img/product.jpg" alt="alt"></a><a href="#" class="product-item__title link">Сумка для инструмента GROSS</a>
+          <p class="product-item__descr">Handwerker, 42 кармана, пластик. дно, наплечный ремень</p>
+          <div class="product-item__price-block">
+            <div class="product-item__price">2300 <span class="ruble">Р</span></div>
+            <div class="product-item__rating">
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                    </svg>
+              </div>
+            </div>
+          </div>
+          <div class="product-item__float">
+            <div class="product-item__bottom">
+              <div class="products-counter">
+                <div class="products-counter__count">1</div>
+                <div class="products-counter__handlers">
+                  <div class="products-counter__handler handler-up">
+                        <svg class="icon icon-chev-up ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-up"></use>
+                        </svg>
+                  </div>
+                  <div class="products-counter__handler handler-down">
+                        <svg class="icon icon-chev-down ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-down"></use>
+                        </svg>
+                  </div>
+                </div>
+              </div><a href="#" class="button button-empty button-mini"><span>в корзину</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+              <svg class="icon icon-heart-fill ">
+                <use xlink:href="img/icons-svg/symbol/sprite.svg#heart-fill"></use>
+              </svg><a href="#" class="product-item__img"><img src="img/product.jpg" alt="alt"></a><a href="#" class="product-item__title link">Сумка для инструмента GROSS</a>
+          <p class="product-item__descr">Handwerker, 42 кармана, пластик. дно, наплечный ремень</p>
+          <div class="product-item__price-block">
+            <div class="product-item__price">2300 <span class="ruble">Р</span></div>
+            <div class="product-item__rating">
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                    </svg>
+              </div>
+            </div>
+          </div>
+          <div class="product-item__float">
+            <div class="product-item__bottom">
+              <div class="products-counter">
+                <div class="products-counter__count">1</div>
+                <div class="products-counter__handlers">
+                  <div class="products-counter__handler handler-up">
+                        <svg class="icon icon-chev-up ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-up"></use>
+                        </svg>
+                  </div>
+                  <div class="products-counter__handler handler-down">
+                        <svg class="icon icon-chev-down ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-down"></use>
+                        </svg>
+                  </div>
+                </div>
+              </div><a href="#" class="button button-empty button-mini"><span>в корзину</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+              <svg class="icon icon-heart-fill ">
+                <use xlink:href="img/icons-svg/symbol/sprite.svg#heart-fill"></use>
+              </svg><a href="#" class="product-item__img"><img src="img/product.jpg" alt="alt"></a><a href="#" class="product-item__title link">Сумка для инструмента GROSS</a>
+          <p class="product-item__descr">Handwerker, 42 кармана, пластик. дно, наплечный ремень</p>
+          <div class="product-item__price-block">
+            <div class="product-item__price">2300 <span class="ruble">Р</span></div>
+            <div class="product-item__rating">
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                    </svg>
+              </div>
+            </div>
+          </div>
+          <div class="product-item__float">
+            <div class="product-item__bottom">
+              <div class="products-counter">
+                <div class="products-counter__count">1</div>
+                <div class="products-counter__handlers">
+                  <div class="products-counter__handler handler-up">
+                        <svg class="icon icon-chev-up ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-up"></use>
+                        </svg>
+                  </div>
+                  <div class="products-counter__handler handler-down">
+                        <svg class="icon icon-chev-down ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-down"></use>
+                        </svg>
+                  </div>
+                </div>
+              </div><a href="#" class="button button-empty button-mini"><span>в корзину</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="related">
+      <div class="container">
+        <div class="title-wrapper title-wrapper--to-slider-nav">
+          <h2>Сопутствующие товары</h2>
+          <div class="slider-arrows"></div>
+        </div>
+      </div>
+      <div class="container related-items container-wrapper">
+        <div class="product-item">
+              <svg class="icon icon-heart-fill ">
+                <use xlink:href="img/icons-svg/symbol/sprite.svg#heart-fill"></use>
+              </svg><a href="#" class="product-item__img"><img src="img/product.jpg" alt="alt"></a><a href="#" class="product-item__title link">Сумка для инструмента GROSS</a>
+          <p class="product-item__descr">Handwerker, 42 кармана, пластик. дно, наплечный ремень</p>
+          <div class="product-item__price-block">
+            <div class="product-item__price">2300 <span class="ruble">Р</span></div>
+            <div class="product-item__rating">
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                    </svg>
+              </div>
+            </div>
+          </div>
+          <div class="product-item__float">
+            <div class="product-item__bottom">
+              <div class="products-counter">
+                <div class="products-counter__count">1</div>
+                <div class="products-counter__handlers">
+                  <div class="products-counter__handler handler-up">
+                        <svg class="icon icon-chev-up ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-up"></use>
+                        </svg>
+                  </div>
+                  <div class="products-counter__handler handler-down">
+                        <svg class="icon icon-chev-down ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-down"></use>
+                        </svg>
+                  </div>
+                </div>
+              </div><a href="#" class="button button-empty button-mini"><span>в корзину</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+              <svg class="icon icon-heart-fill ">
+                <use xlink:href="img/icons-svg/symbol/sprite.svg#heart-fill"></use>
+              </svg><a href="#" class="product-item__img"><img src="img/product.jpg" alt="alt"></a><a href="#" class="product-item__title link">Сумка для инструмента GROSS</a>
+          <p class="product-item__descr">Handwerker, 42 кармана, пластик. дно, наплечный ремень</p>
+          <div class="product-item__price-block">
+            <div class="product-item__price">2300 <span class="ruble">Р</span></div>
+            <div class="product-item__rating">
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                    </svg>
+              </div>
+            </div>
+          </div>
+          <div class="product-item__float">
+            <div class="product-item__bottom">
+              <div class="products-counter">
+                <div class="products-counter__count">1</div>
+                <div class="products-counter__handlers">
+                  <div class="products-counter__handler handler-up">
+                        <svg class="icon icon-chev-up ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-up"></use>
+                        </svg>
+                  </div>
+                  <div class="products-counter__handler handler-down">
+                        <svg class="icon icon-chev-down ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-down"></use>
+                        </svg>
+                  </div>
+                </div>
+              </div><a href="#" class="button button-empty button-mini"><span>в корзину</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+              <svg class="icon icon-heart-fill ">
+                <use xlink:href="img/icons-svg/symbol/sprite.svg#heart-fill"></use>
+              </svg><a href="#" class="product-item__img"><img src="img/product.jpg" alt="alt"></a><a href="#" class="product-item__title link">Сумка для инструмента GROSS</a>
+          <p class="product-item__descr">Handwerker, 42 кармана, пластик. дно, наплечный ремень</p>
+          <div class="product-item__price-block">
+            <div class="product-item__price">2300 <span class="ruble">Р</span></div>
+            <div class="product-item__rating">
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                    </svg>
+              </div>
+            </div>
+          </div>
+          <div class="product-item__float">
+            <div class="product-item__bottom">
+              <div class="products-counter">
+                <div class="products-counter__count">1</div>
+                <div class="products-counter__handlers">
+                  <div class="products-counter__handler handler-up">
+                        <svg class="icon icon-chev-up ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-up"></use>
+                        </svg>
+                  </div>
+                  <div class="products-counter__handler handler-down">
+                        <svg class="icon icon-chev-down ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-down"></use>
+                        </svg>
+                  </div>
+                </div>
+              </div><a href="#" class="button button-empty button-mini"><span>в корзину</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+              <svg class="icon icon-heart-fill ">
+                <use xlink:href="img/icons-svg/symbol/sprite.svg#heart-fill"></use>
+              </svg><a href="#" class="product-item__img"><img src="img/product.jpg" alt="alt"></a><a href="#" class="product-item__title link">Сумка для инструмента GROSS</a>
+          <p class="product-item__descr">Handwerker, 42 кармана, пластик. дно, наплечный ремень</p>
+          <div class="product-item__price-block">
+            <div class="product-item__price">2300 <span class="ruble">Р</span></div>
+            <div class="product-item__rating">
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                    </svg>
+              </div>
+            </div>
+          </div>
+          <div class="product-item__float">
+            <div class="product-item__bottom">
+              <div class="products-counter">
+                <div class="products-counter__count">1</div>
+                <div class="products-counter__handlers">
+                  <div class="products-counter__handler handler-up">
+                        <svg class="icon icon-chev-up ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-up"></use>
+                        </svg>
+                  </div>
+                  <div class="products-counter__handler handler-down">
+                        <svg class="icon icon-chev-down ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-down"></use>
+                        </svg>
+                  </div>
+                </div>
+              </div><a href="#" class="button button-empty button-mini"><span>в корзину</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+              <svg class="icon icon-heart-fill ">
+                <use xlink:href="img/icons-svg/symbol/sprite.svg#heart-fill"></use>
+              </svg><a href="#" class="product-item__img"><img src="img/product.jpg" alt="alt"></a><a href="#" class="product-item__title link">Сумка для инструмента GROSS</a>
+          <p class="product-item__descr">Handwerker, 42 кармана, пластик. дно, наплечный ремень</p>
+          <div class="product-item__price-block">
+            <div class="product-item__price">2300 <span class="ruble">Р</span></div>
+            <div class="product-item__rating">
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                    </svg>
+              </div>
+            </div>
+          </div>
+          <div class="product-item__float">
+            <div class="product-item__bottom">
+              <div class="products-counter">
+                <div class="products-counter__count">1</div>
+                <div class="products-counter__handlers">
+                  <div class="products-counter__handler handler-up">
+                        <svg class="icon icon-chev-up ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-up"></use>
+                        </svg>
+                  </div>
+                  <div class="products-counter__handler handler-down">
+                        <svg class="icon icon-chev-down ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-down"></use>
+                        </svg>
+                  </div>
+                </div>
+              </div><a href="#" class="button button-empty button-mini"><span>в корзину</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subscribe">
+      <div class="container">
+        <div class="title-wrapper">
+          <h2>Подпишитесь на нашу рассылку - читайте свежие новости
+            <div>о скидках и получите в подарок 500 руб.*</div>
+          </h2>
+        </div>
+        <form action="#" class="subscribe-form">
+          <label class="standart-label">
+            <input type="text" name="name" placeholder="Имя">
+          </label>
+          <label class="standart-label">
+            <input type="text" name="phone-mail" placeholder="E-mail или телефон">
+          </label>
+          <button type="submit" class="button button-orange"><span>Подписаться</span></button>
+        </form>
+      </div>
+      <div class="container subscribe-bottom">
+        <p>Отправляя свои данные вы соглашаетесь на обработку <a href="#" class="blue-link">персональных данных</a></p>
+        <p>*Подарок зачисляется на счет пользователя и используется при оплате товаров.</p>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer-top no-pd-480">
+        <div class="footer-item footer-item--links">
+          <div class="footer-item__title">О КОМПАНИИ</div>
+          <div class="footer-item__menu">
+            <ul>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#">Условия работы</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-item footer-item--soc">
+          <div class="footer-item__title">МЫ В СОЦСЕТЯХ</div>
+          <div class="footer-socials"><a href="#" class="icon icon-quote"></a><a href="#" class="icon icon-vk"></a><a href="#" class="icon icon-fb"></a><a href="#" class="icon icon-tg"></a><a href="#" class="icon icon-viber"></a></div>
+        </div>
+        <div class="footer-item footer-item--contacts">
+          <div class="footer-item__title">КОНТАКТЫ</div>
+          <p>г. Нижний Новгород, ул.Ногина д.6 «А»</p>
+          <p>Пн-Пт с 9:00 до 18:00. Суббота, воскресенье выходной</p>
+          <p>+7(831)413-31-72 +7(831)273-85-71</p>
+          <p>номера документации (ИНН, ОГРН, ЕГРЮЛ и т.п.)</p>
+        </div>
+        <div class="footer-item footer-item--hidden"><a href="#callback-popup" class="header-contacts__callback button button-empty button-mini callback-show"><span>Заказать звонок</span></a><a href="tel:88001231212" class="header-contacts__phone">8 800 <span>123 12 12</span></a></div>
+      </div>
+      <div class="container footer-bottom">
+        <div class="footer-copyright">© 2018 —  «Инструментальный дом»</div>
+        <div>Разработка сайта — <a href="#">Denir</a></div>
+      </div>
+    </footer>
+    <div id="search-popup" class="popup-search mfp-hide white-popup-block">
+      <form action="#">
+        <label class="header-search">
+          <input type="text" name="search" placeholder="Поиск по сайту">
+              <svg class="icon icon-magnifier ">
+                <use xlink:href="img/icons-svg/symbol/sprite.svg#magnifier"></use>
+              </svg>
+              <svg class="icon icon-enter ">
+                <use xlink:href="img/icons-svg/symbol/sprite.svg#enter"></use>
+              </svg>
+        </label>
+      </form>
+    </div>
+    <div id="price-list-popup" class="popup-price-list mfp-hide white-popup-block">
+      <div class="price-download__form">
+        <div class="price-download__title">Скачайте прайс-лист и получите
+          <div>в подарок 500 р.</div>
+        </div>
+        <form action="#">
+          <label class="standart-label">
+            <input type="text" name="email-phone" placeholder="E-mail или телефон" required>
+          </label>
+          <label class="standart-label">
+            <input type="text" name="name" placeholder="Имя" required>
+          </label>
+          <button type="submit" class="button button-orange"><span>Скачать прайс-лист</span></button>
+        </form>
+        <div class="price-download__bottom">Отправляя свои данные, вы соглашаетесь на обработку <a href="#">Персональных данных</a></div>
+      </div>
+    </div>
+    <div id="callback-popup" class="popup-callback mfp-hide white-popup-block">
+      <div class="price-download__form">
+        <div class="price-download__title">Заказать звонок</div>
+        <form action="#">
+          <label class="standart-label">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+          </label>
+          <label class="standart-label">
+            <input type="text" name="phone" placeholder="Телефон" required>
+          </label>
+          <button type="submit" class="button button-orange"><span>Заказать звонок</span></button>
+        </form>
+        <div class="price-download__bottom">Отправляя свои данные, вы соглашаетесь на обработку <a href="#">Персональных данных</a></div>
+      </div>
+    </div>
+    <div id="manager-write-popup" class="popup-write-manager mfp-hide white-popup-block">
+      <div class="price-download__form">
+        <div class="price-download__title">Написать менеджеру</div>
+        <form action="#">
+          <label class="standart-label">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+          </label>
+          <label class="standart-label">
+            <input type="text" name="phone" placeholder="Телефон" required>
+          </label>
+          <label class="standart-label">
+            <input type="text" name="phone" placeholder="Email" required>
+          </label>
+          <label class="standart-label">
+            <textarea name="" placeholder="Ваш вопрос"></textarea>
+          </label>
+          <button type="submit" class="button button-orange"><span>Заказать звонок</span></button>
+        </form>
+        <div class="price-download__bottom">Отправляя свои данные, вы соглашаетесь на обработку <a href="#">Персональных данных</a></div>
+      </div>
+    </div>
+    <div id="rating-manager-popup" class="popup-manager-rating mfp-hide white-popup-block">
+      <div class="price-download__form">
+        <div class="price-download__title">Оцените работу менеджера</div>
+        <div class="manager-photo"><img src="img/manager.jpg" alt="alt"></div>
+        <div class="manager-info">
+          <div class="manager-info__top">
+            <div class="manager-info__name">Симонова Екатерина</div>
+            <div>Менеджер по работе с юридическими лицами</div>
+          </div>
+        </div>
+        <div class="popup-manager-rating__to-mark">Поставьте вашу оценку</div>
+        <div class="product-item__rating product-item__rating--big">
+          <div class="rating-star">
+                <svg class="icon icon-rate-star ">
+                  <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                </svg>
+          </div>
+          <div class="rating-star">
+                <svg class="icon icon-rate-star ">
+                  <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                </svg>
+          </div>
+          <div class="rating-star">
+                <svg class="icon icon-rate-star ">
+                  <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                </svg>
+          </div>
+          <div class="rating-star">
+                <svg class="icon icon-rate-star ">
+                  <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                </svg>
+          </div>
+          <div class="rating-star">
+                <svg class="icon icon-rate-star ">
+                  <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                </svg>
+          </div>
+        </div>
+        <button type="submit" class="button button-orange"><span>Отправить</span></button>
+      </div>
+    </div>
+    <div id="enter-popup" class="popup-enter mfp-hide white-popup-block">
+      <ul class="tabs__list">
+        <li class="tabs__item tabs__item--active"><a href="#autorisation" class="tabs__link">Авторизация</a></li>
+        <li class="tabs__item"><a href="#registration" class="tabs__link">Регистрация</a></li>
+      </ul>
+      <ul class="tabs-content">
+        <li id="autorisation" class="tabs__item enter-popup__tabs-item">
+          <div class="popup-divider">Войти с помощью</div>
+          <ul class="popup-socials">
+            <li><a href="#" class="pop-soc-icon vk-popup"></a></li>
+            <li><a href="#" class="pop-soc-icon fb-popup"></a></li>
+            <li><a href="#" class="pop-soc-icon ok"></a></li>
+            <li><a href="#" class="pop-soc-icon google"></a></li>
+            <li><a href="#" class="pop-soc-icon inst"></a></li>
+            <li><a href="#" class="pop-soc-icon mail"></a></li>
+          </ul>
+          <div class="popup-divider">или</div>
+          <form action="#" class="enter-form">
+            <label class="standart-label">
+              <input type="text" name="name" placeholder="Ваше имя" required>
+            </label>
+            <label class="standart-label">
+              <input type="text" name="phone" placeholder="Телефон" required>
+            </label>
+            <div class="enter-form__forget"><a href="#" class="link">Забыли пароль?</a><a href="#" class="button button-blue button-mini button-not-bordered"><span>войти</span></a></div>
+            <div class="enter-form__while">Ещё не зарегистрированы? <a href="#" class="link">Зарегистрироваться</a></div>
+          </form>
+        </li>
+        <li id="registration" class="tabs__item enter-popup__tabs-item hidden">
+          <div class="popup-divider">Войти с помощью</div>
+          <ul class="popup-socials">
+            <li><a href="#" class="pop-soc-icon vk-popup"></a></li>
+            <li><a href="#" class="pop-soc-icon fb-popup"></a></li>
+            <li><a href="#" class="pop-soc-icon ok"></a></li>
+            <li><a href="#" class="pop-soc-icon google"></a></li>
+            <li><a href="#" class="pop-soc-icon inst"></a></li>
+            <li><a href="#" class="pop-soc-icon mail"></a></li>
+          </ul>
+          <div class="popup-divider">или</div>
+          <form action="#" class="enter-form">
+            <label class="standart-label">
+              <input type="text" name="name" placeholder="Ваше имя" required>
+            </label>
+            <label class="standart-label">
+              <input type="text" name="phone" placeholder="Телефон" required>
+            </label>
+            <label class="custom-checkbox-label policy-label">
+              <input type="checkbox"><span class="custom-checkbox"></span><span>Согласен с политикой конфиденциальности</span>
+            </label>
+            <div class="enter-form__bottom"><a href="#" class="button button-orange button-mini"><span>зарегистрироваться</span></a></div>
+            <div class="enter-form__while">Уже зарегистрированы? <a href="#" class="link">Войти</a></div>
+          </form>
+        </li>
+      </ul>
+    </div>
+    <div class="tooltip-templates">
+      <div id="conditions-tooltip" class="tooltip-conditions">
+        <div class="container container-wide gray-bg">
+          <div class="conditions-item">
+                <svg class="icon icon-contract ">
+                  <use xlink:href="img/icons-svg/symbol/sprite.svg#contract"></use>
+                </svg>
+            <div class="conditions-item__title">Работаем по договору</div>
+            <p>Главная; Работаем по договору. Имеем большой положительный опыт работы с государственными, муниципальными и коммерческими заказчиками </p>
+          </div>
+          <div class="conditions-item">
+                <svg class="icon icon-delivery-man ">
+                  <use xlink:href="img/icons-svg/symbol/sprite.svg#delivery-man"></use>
+                </svg>
+            <div class="conditions-item__title">Бесплатная доставка<br>от 5000 руб.</div>
+            <p>Главная; Работаем по договору. Имеем большой положительный опыт работы с государственными, муниципальными и коммерческими заказчиками </p>
+          </div>
+          <div class="conditions-item">
+                <svg class="icon icon-tag ">
+                  <use xlink:href="img/icons-svg/symbol/sprite.svg#tag"></use>
+                </svg>
+            <div class="conditions-item__title">Скидки оптовым клиентам</div>
+            <p>Главная; Работаем по договору. Имеем большой положительный опыт работы с государственными, муниципальными и коммерческими заказчиками </p>
+          </div>
+          <div class="conditions-item">
+                <svg class="icon icon-card-payment ">
+                  <use xlink:href="img/icons-svg/symbol/sprite.svg#card-payment"></use>
+                </svg>
+            <div class="conditions-item__title">Различные способы оплаты</div>
+            <p>Главная; Работаем по договору. Имеем большой положительный опыт работы с государственными, муниципальными и коммерческими заказчиками </p>
+          </div>
+        </div>
+      </div>
+      <div id="cart-tooltip" class="tooltip-cart">
+        <div class="tooltip-cart__header">Ваша корзина
+          <div><span class="tooltip-cart__prod-count">6</span> товаров на сумму <span class="tooltip-cart__total-price">6600 р.</span></div>
+        </div>
+        <div class="tooltip-cart__item">
+          <div class="tooltip-cart__img"><img src="img/cart-tooltip-prod.jpg" alt="alt"></div>
+          <div class="tooltip-cart__text"><a href="#" class="tooltip-cart__name">Кисть плоская Евро натуральная, светлая щетина 250 мм </a>
+            <div class="tooltip-cart__info">
+              <div class="tooltip-cart__count">3 шт.</div><span></span>
+              <div class="tooltip-cart__price">3300 p.</div>
+            </div>
+          </div>
+        </div>
+        <div class="tooltip-cart__item">
+          <div class="tooltip-cart__img"><img src="img/cart-tooltip-prod.jpg" alt="alt"></div>
+          <div class="tooltip-cart__text"><a href="#" class="tooltip-cart__name">Кисть плоская Евро натуральная, светлая щетина 250 мм </a>
+            <div class="tooltip-cart__info">
+              <div class="tooltip-cart__count">3 шт.</div><span></span>
+              <div class="tooltip-cart__price">3300 p.</div>
+            </div>
+          </div>
+        </div>
+        <div class="tooltip-cart__item">
+          <div class="tooltip-cart__img"><img src="img/cart-tooltip-prod.jpg" alt="alt"></div>
+          <div class="tooltip-cart__text"><a href="#" class="tooltip-cart__name">Кисть плоская Евро натуральная, светлая щетина 250 мм </a>
+            <div class="tooltip-cart__info">
+              <div class="tooltip-cart__count">3 шт.</div><span></span>
+              <div class="tooltip-cart__price">3300 p.</div>
+            </div>
+          </div>
+        </div>
+        <div class="tooltip-cart__bottom"><a href="#" class="button button-orange button-mini"><span>ОФОРМИТЬ</span></a></div>
+        <div class="custom-scroll-advanced_track-y"><span class="custom-scroll-arrow top"></span><span class="custom-scroll-arrow bottom"></span></div>
+      </div>
+      <div id="cart-tooltip-edit" class="tooltip-cart">
+        <div class="tooltip-cart__header">Ваша корзина
+          <div><span class="tooltip-cart__prod-count">6</span> товаров на сумму <span class="tooltip-cart__total-price">6600 р.</span></div>
+        </div>
+        <div class="tooltip-cart__item">
+          <div class="tooltip-cart__img"><img src="img/cart-tooltip-prod.jpg" alt="alt"></div>
+          <div class="tooltip-cart__text"><a href="#" class="tooltip-cart__name">Кисть плоская Евро натуральная, светлая щетина 250 мм </a>
+            <div class="tooltip-cart__info">
+              <div class="tooltip-cart__count">3 шт.</div><span></span>
+              <div class="tooltip-cart__price">3300 p.</div>
+            </div>
+          </div>
+        </div>
+        <div class="tooltip-cart__item">
+          <div class="tooltip-cart__img"><img src="img/cart-tooltip-prod.jpg" alt="alt"></div>
+          <div class="tooltip-cart__text"><a href="#" class="tooltip-cart__name">Кисть плоская Евро натуральная, светлая щетина 250 мм </a>
+            <div class="tooltip-cart__info">
+              <div class="tooltip-cart__count">3 шт.</div><span></span>
+              <div class="tooltip-cart__price">3300 p.</div>
+            </div>
+          </div>
+        </div>
+        <div class="tooltip-cart__item">
+          <div class="tooltip-cart__img"><img src="img/cart-tooltip-prod.jpg" alt="alt"></div>
+          <div class="tooltip-cart__text"><a href="#" class="tooltip-cart__name">Кисть плоская Евро натуральная, светлая щетина 250 мм </a>
+            <div class="tooltip-cart__info">
+              <div class="tooltip-cart__count">3 шт.</div><span></span>
+              <div class="tooltip-cart__price">3300 p.</div>
+            </div>
+          </div>
+        </div>
+        <div class="tooltip-cart__bottom"><a href="#" class="button button-orange button-mini"><span>редактировать заказ</span></a></div>
+        <div class="custom-scroll-advanced_track-y"><span class="custom-scroll-arrow top"></span><span class="custom-scroll-arrow bottom"></span></div>
+      </div>
+      <div id="cart-tooltip-favourites" class="tooltip-cart tooltip-cart-favourites">
+        <div class="tooltip-cart__header">Избранное <span class="tooltip-cart__fav-count">6</span> товаров </div>
+        <div class="tooltip-cart__item">
+          <div class="tooltip-cart__img"><img src="img/cart-tooltip-prod.jpg" alt="alt"></div>
+          <div class="tooltip-cart__text"><a href="#" class="tooltip-cart__name">Кисть плоская Евро натуральная, светлая щетина 250 мм </a>
+            <div class="tooltip-cart__info">
+              <div class="tooltip-cart__count">3 шт.</div><span></span>
+              <div class="tooltip-cart__price">3300 p.</div>
+            </div><a href="#" class="button button-blue button-mini"><span>в корзину</span></a>
+          </div>
+        </div>
+        <div class="tooltip-cart__item">
+          <div class="tooltip-cart__img"><img src="img/cart-tooltip-prod.jpg" alt="alt"></div>
+          <div class="tooltip-cart__text"><a href="#" class="tooltip-cart__name">Кисть плоская Евро натуральная, светлая щетина 250 мм </a>
+            <div class="tooltip-cart__info">
+              <div class="tooltip-cart__count">3 шт.</div><span></span>
+              <div class="tooltip-cart__price">3300 p.</div>
+            </div><a href="#" class="button button-blue button-mini"><span>в корзину</span></a>
+          </div>
+        </div>
+        <div class="tooltip-cart__item">
+          <div class="tooltip-cart__img"><img src="img/cart-tooltip-prod.jpg" alt="alt"></div>
+          <div class="tooltip-cart__text"><a href="#" class="tooltip-cart__name">Кисть плоская Евро натуральная, светлая щетина 250 мм </a>
+            <div class="tooltip-cart__info">
+              <div class="tooltip-cart__count">3 шт.</div><span></span>
+              <div class="tooltip-cart__price">3300 p.</div>
+            </div><a href="#" class="button button-blue button-mini"><span>в корзину</span></a>
+          </div>
+        </div>
+        <div class="custom-scroll-advanced_track-y"><span class="custom-scroll-arrow top"></span><span class="custom-scroll-arrow bottom"></span></div>
+      </div>
+      <div id="registered-tip" class="tooltip-registered-user">
+        <ul>
+          <li><a href="#">Профиль</a></li>
+          <li><a href="#">Мои заказы<span>(0)</span></a></li>
+          <li><a href="#">Избранное<span>(4)</span></a></li>
+          <li><a href="#">Корзина<span>(0)</span></a></li>
+          <li><a href="#">Персональные скидки</a></li>
+          <li><a href="#">Выход</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="hidden"></div>
+    <div class="loader">
+      <div class="loader_inner"></div>
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/svg4everybody/svg4everybody.min.js" async onload="svg4everybody();"></script>
+  </body>
+</html>

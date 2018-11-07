@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!-- Здесь пишем код-->
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top-left">
+            <div class="header-burger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div><img src="img/logo.png" alt="alt">
+            <div class="header__logo-caption">Товары для дома по оптовым ценам 
+              <div>Доставка по России</div>
+            </div>
+          </div>
+          <div class="header-top-right">
+            <div class="header-top-right__top">
+              <ul class="header-top-right__menu">
+                <li><a href="#" data-tooltip-content="#conditions-tooltip" class="tooltip">Условия работы</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Скачать прайс</a></li>
+              </ul>
+              <div class="header-contacts"><a href="#callback-popup" class="header-contacts__callback callback-show">Заказать звонок</a><a href="tel:88001231212" class="header-contacts__phone">8 800 <span>123 12 12</span></a></div>
+            </div>
+            <div class="header-top-right__bottom">
+              <form action="#">
+                <label class="header-search">
+                  <input type="text" name="search" placeholder="Поиск по сайту">
+                      <svg class="icon icon-magnifier ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#magnifier"></use>
+                      </svg>
+                      <svg class="icon icon-enter ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#enter"></use>
+                      </svg>
+                </label>
+              </form>
+              <div class="header-account"><a href="#search-popup" class="header-account__item header-account__search">
+                      <svg class="icon icon-magnifier ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#magnifier"></use>
+                      </svg></a><a href="#enter-popup" class="header-account__item header-account__user popup-unregistered">
+                      <svg class="icon icon-user ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#user"></use>
+                      </svg></a><a href="#" data-tooltip-content="#cart-tooltip-favourites" class="header-account__item header-account__favorites">
+                      <svg class="icon icon-heart ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#heart"></use>
+                      </svg>
+                  <div class="favorites-count">3</div></a><a href="#" data-tooltip-content="#cart-tooltip" class="header-account__item header-account__cart">
+                      <svg class="icon icon-cart ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#cart"></use>
+                      </svg>
+                  <div class="cart-count">3</div></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container no-paddings">
+          <div class="header-catalog">
+            <div class="header-catalog__button">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div><span>каталог</span>
+          </div>
+          <div class="header__main-menu">
+            <ul class="main-menu">
+              <li><a href="#"><span>Сад и огород</span></a></li>
+              <li><a href="#"><span>Все для ремонта</span></a></li>
+              <li class="active"><a href="#"><span>Инструменты</span></a></li>
+              <li><a href="#"><span>Новинки</span></a></li>
+              <li><a href="#"><span>Хиты продаж</span></a></li>
+              <li><a href="#"><span>Акции %</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="mega-menu">
+        <div class="container"><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-piston ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#piston"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Автозапчасти</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-fuel ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#fuel"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Автохимия</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-oil ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#oil"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Маслоспецжидкости</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-hammer ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#hammer"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Отделочный инструмент</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-piston ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#piston"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Автозапчасти</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-fuel ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#fuel"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Автохимия</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-oil ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#oil"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Маслоспецжидкости</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-hammer ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#hammer"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Отделочный инструмент</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-piston ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#piston"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Автозапчасти</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-fuel ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#fuel"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Автохимия</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-oil ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#oil"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Маслоспецжидкости</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-hammer ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#hammer"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Отделочный инструмент</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-piston ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#piston"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Автозапчасти</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-fuel ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#fuel"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Автохимия</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-oil ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#oil"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Маслоспецжидкости</div></a><a href="#" class="mega-menu__item">
+            <div class="mega-menu__icon">
+                  <svg class="icon icon-hammer ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#hammer"></use>
+                  </svg>
+            </div>
+            <div class="mega-menu__name">Отделочный инструмент</div></a>
+        </div>
+      </section>
+    </header>
+    <div class="container mobile-nav-wrap">
+      <nav class="mobile-nav">
+        <div class="mobile-nav__top filter-mobile__list-item gray-bg"><a href="tel:88001231212" class="header-contacts__phone">8 800 <span>123 12 12</span></a><a href="#callback-popup" class="header-contacts__callback callback-show">Заказать звонок</a></div>
+        <ul class="mobile-nav__catalog">
+          <li class="filter-mobile__list-item"><a href="catalog.html">Каталог
+                  <svg class="icon icon-chev-right ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-right"></use>
+                  </svg></a></li>
+        </ul>
+        <ul class="mobile-nav__top-menu">
+          <li class="filter-mobile__list-item"><a href="#">Новинки</a></li>
+          <li class="filter-mobile__list-item"><a href="#">Хиты продаж</a></li>
+          <li class="filter-mobile__list-item"><a href="#">Акции %</a></li>
+        </ul>
+        <ul class="mobile-nav__middle-menu">
+          <li class="filter-mobile__list-item"><a href="#">Условия работы</a></li>
+          <li class="filter-mobile__list-item"><a href="#">Доставка и оплата</a></li>
+          <li class="filter-mobile__list-item"><a href="#">Контакты</a></li>
+          <li class="filter-mobile__list-item"><a href="#">Скачать прайс</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container price-download">
+      <div class="price-download__form">
+        <div class="price-download__title">Скачайте прайс-лист и получите
+          <div>в подарок 500 р.</div>
+        </div>
+        <form action="#">
+          <label class="standart-label">
+            <input type="text" name="email-phone" placeholder="E-mail или телефон" required>
+          </label>
+          <label class="standart-label">
+            <input type="text" name="name" placeholder="Имя" required>
+          </label>
+          <button type="submit" class="button button-orange"><span>Скачать прайс-лист</span></button>
+        </form>
+        <div class="price-download__bottom">Отправляя свои данные, вы соглашаетесь на обработку <a href="#">Персональных данных</a></div>
+      </div>
+    </div>
+    <section class="main-slider">
+      <div class="container no-paddings">
+        <div class="main-slider__price-wrap"><a href="#price-list-popup" class="button button-orange main-slider__price"><span>Скачать прайс-лист</span></a></div>
+        <div class="main-slider_car">
+          <div style="background-image: url(img/001-strizhka-gazona.jpg)" class="main-slider-slide">
+            <div class="main-slider-slide__block">
+              <div class="main-slider-slide__text">
+                <div class="main-slider-slide__title">Газонокосилки AWD</div>
+                <p>Чтобы сделать правильный выбор газонокосилки, нужно Учесть размеры и особенности газона. Не забывайте и об экономии времени: Чем шире режущая поверхность, тем меньше времени Вам понадобится для скашивания и тем реже придется опустошать травосборник.</p>
+              </div><a href="#" class="button button-blue"><span>подробнее</span></a>
+            </div>
+          </div>
+          <div style="background-image: url(img/001-strizhka-gazona.jpg)" class="main-slider-slide">
+            <div class="main-slider-slide__block">
+              <div class="main-slider-slide__text">
+                <div class="main-slider-slide__title">Slide 2</div>
+                <p>Чтобы сделать правильный выбор газонокосилки, нужно Учесть размеры и особенности газона. Не забывайте и об экономии времени: Чем шире режущая поверхность, тем меньше времени Вам понадобится для скашивания и тем реже придется опустошать травосборник.</p>
+              </div><a href="#" class="button button-blue"><span>подробнее</span></a>
+            </div>
+          </div>
+          <div style="background-image: url(img/001-strizhka-gazona.jpg)" class="main-slider-slide">
+            <div class="main-slider-slide__block">
+              <div class="main-slider-slide__text">
+                <div class="main-slider-slide__title">Slide 3</div>
+                <p>Чтобы сделать правильный выбор газонокосилки, нужно Учесть размеры и особенности газона. Не забывайте и об экономии времени: Чем шире режущая поверхность, тем меньше времени Вам понадобится для скашивания и тем реже придется опустошать травосборник.</p>
+              </div><a href="#" class="button button-blue"><span>подробнее</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="main-slider__mob-form price-download__form">
+          <div class="price-download__title">Скачайте прайс-лист и получите
+            <div>в подарок 500 р.</div>
+          </div>
+        </div>
+      </div>
+      <div class="container no-paddings">
+        <div class="main-slider__decor"></div>
+        <div class="main-slider__decor"></div>
+      </div>
+    </section>
+    <section class="catalog">
+      <div class="container">
+        <div class="title-wrapper title-wrapper--to-slider-nav">
+          <h2>Каталог</h2>
+          <div class="slider-arrows"></div>
+        </div>
+      </div>
+      <div class="container catalog-items container-wrapper">
+        <div class="catalog-item"><a href="#" style="background-image: url(img/catalog-items/01.jpg)" class="catalog-item__img"><span class="button button-blue"><span>подробнее</span></span></a><a href="#" class="catalog-item__bottom">
+            <div class="catalog-item__text">Автозапчасти
+              <div>от 1000 руб.</div>
+            </div></a></div>
+        <div class="catalog-item"><a href="#" style="background-image: url(img/catalog-items/02.jpg)" class="catalog-item__img"><span class="button button-blue"><span>подробнее</span></span></a><a href="#" class="catalog-item__bottom">
+            <div class="catalog-item__text">Автохимия
+              <div>от 1000 руб.</div>
+            </div></a></div>
+        <div class="catalog-item"><a href="#" style="background-image: url(img/catalog-items/03.jpg)" class="catalog-item__img"><span class="button button-blue"><span>подробнее</span></span></a><a href="#" class="catalog-item__bottom">
+            <div class="catalog-item__text">Отвертки
+              <div>от 1000 руб.</div>
+            </div></a></div>
+        <div class="catalog-item"><a href="#" style="background-image: url(img/catalog-items/04.jpg)" class="catalog-item__img"><span class="button button-blue"><span>подробнее</span></span></a><a href="#" class="catalog-item__bottom">
+            <div class="catalog-item__text">Сантехника
+              <div>от 1000 руб.</div>
+            </div></a></div>
+        <div class="catalog-item"><a href="#" style="background-image: url(img/catalog-items/05.jpg)" class="catalog-item__img"><span class="button button-blue"><span>подробнее</span></span></a><a href="#" class="catalog-item__bottom">
+            <div class="catalog-item__text">Товары для полива
+              <div>от 1000 руб.</div>
+            </div></a></div>
+        <div class="catalog-item"><a href="#" style="background-image: url(img/catalog-items/01.jpg)" class="catalog-item__img"><span class="button button-blue"><span>подробнее</span></span></a><a href="#" class="catalog-item__bottom">
+            <div class="catalog-item__text">Еще что-то
+              <div>от 1000 руб.</div>
+            </div></a></div>
+      </div>
+    </section>
+    <section class="actions">
+      <div class="container">
+        <div class="title-wrapper title-wrapper--to-slider-nav">
+          <h2>Акции</h2>
+          <div class="slider-arrows"></div>
+        </div>
+      </div>
+      <div class="container actions-items container-wrapper">
+        <div class="action-item"><a href="#" style="background-image: url(img/actions-items/01.jpg)" class="action-item__img"></a><a href="#" class="action-item__title">Акция на строительный раствор или бетон</a>
+          <div class="action-item__text">Этот бетон доставляется бетоновозом. Перемешивание бетона продолжается во время его перевозки, что сохраняет его качества.</div>
+        </div>
+        <div class="action-item"><a href="#" style="background-image: url(img/actions-items/02.jpg)" class="action-item__img"></a><a href="#" class="action-item__title">Акция на гипсокартон и системы крепления</a>
+          <div class="action-item__text">Этот бетон доставляется бетоновозом. Перемешивание бетона продолжается во время его перевозки, что сохраняет его качества.</div>
+        </div>
+        <div class="action-item"><a href="#" style="background-image: url(img/actions-items/03.jpg)" class="action-item__img"></a><a href="#" class="action-item__title">Акция на горизонтальные жалюзи и системы крепления</a>
+          <div class="action-item__text">Этот бетон доставляется бетоновозом. Перемешивание бетона продолжается во время его перевозки, что сохраняет его качества.</div>
+        </div>
+        <div class="action-item"><a href="#" style="background-image: url(img/actions-items/04.jpg)" class="action-item__img"></a><a href="#" class="action-item__title">Акция на строительный раствор или бетон</a>
+          <div class="action-item__text">Этот бетон доставляется бетоновозом. Перемешивание бетона продолжается во время его перевозки, что сохраняет его качества.</div>
+        </div>
+        <div class="action-item"><a href="#" style="background-image: url(img/actions-items/01.jpg)" class="action-item__img"></a><a href="#" class="action-item__title">Акция на строительный раствор или бетон</a>
+          <div class="action-item__text">Этот бетон доставляется бетоновозом. Перемешивание бетона продолжается во время его перевозки, что сохраняет его качества.</div>
+        </div>
+      </div>
+    </section>
+    <section class="related">
+      <div class="container">
+        <div class="title-wrapper title-wrapper--to-slider-nav">
+          <h2>Хиты продаж</h2>
+          <div class="slider-arrows"></div>
+        </div>
+      </div>
+      <div class="container related-items container-wrapper">
+        <div class="product-item">
+              <svg class="icon icon-heart-fill ">
+                <use xlink:href="img/icons-svg/symbol/sprite.svg#heart-fill"></use>
+              </svg><a href="#" class="product-item__img"><img src="img/product.jpg" alt="alt"></a><a href="#" class="product-item__title link">Сумка для инструмента GROSS</a>
+          <p class="product-item__descr">Handwerker, 42 кармана, пластик. дно, наплечный ремень</p>
+          <div class="product-item__price-block">
+            <div class="product-item__price">2300 <span class="ruble">Р</span></div>
+            <div class="product-item__rating">
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                    </svg>
+              </div>
+            </div>
+          </div>
+          <div class="product-item__float">
+            <div class="product-item__bottom">
+              <div class="products-counter">
+                <div class="products-counter__count">1</div>
+                <div class="products-counter__handlers">
+                  <div class="products-counter__handler handler-up">
+                        <svg class="icon icon-chev-up ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-up"></use>
+                        </svg>
+                  </div>
+                  <div class="products-counter__handler handler-down">
+                        <svg class="icon icon-chev-down ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-down"></use>
+                        </svg>
+                  </div>
+                </div>
+              </div><a href="#" class="button button-empty button-mini"><span>в корзину</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+              <svg class="icon icon-heart-fill ">
+                <use xlink:href="img/icons-svg/symbol/sprite.svg#heart-fill"></use>
+              </svg><a href="#" class="product-item__img"><img src="img/product.jpg" alt="alt"></a><a href="#" class="product-item__title link">Сумка для инструмента GROSS</a>
+          <p class="product-item__descr">Handwerker, 42 кармана, пластик. дно, наплечный ремень</p>
+          <div class="product-item__price-block">
+            <div class="product-item__price">2300 <span class="ruble">Р</span></div>
+            <div class="product-item__rating">
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                    </svg>
+              </div>
+            </div>
+          </div>
+          <div class="product-item__float">
+            <div class="product-item__bottom">
+              <div class="products-counter">
+                <div class="products-counter__count">1</div>
+                <div class="products-counter__handlers">
+                  <div class="products-counter__handler handler-up">
+                        <svg class="icon icon-chev-up ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-up"></use>
+                        </svg>
+                  </div>
+                  <div class="products-counter__handler handler-down">
+                        <svg class="icon icon-chev-down ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-down"></use>
+                        </svg>
+                  </div>
+                </div>
+              </div><a href="#" class="button button-empty button-mini"><span>в корзину</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+              <svg class="icon icon-heart-fill ">
+                <use xlink:href="img/icons-svg/symbol/sprite.svg#heart-fill"></use>
+              </svg><a href="#" class="product-item__img"><img src="img/product.jpg" alt="alt"></a><a href="#" class="product-item__title link">Сумка для инструмента GROSS</a>
+          <p class="product-item__descr">Handwerker, 42 кармана, пластик. дно, наплечный ремень</p>
+          <div class="product-item__price-block">
+            <div class="product-item__price">2300 <span class="ruble">Р</span></div>
+            <div class="product-item__rating">
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                    </svg>
+              </div>
+            </div>
+          </div>
+          <div class="product-item__float">
+            <div class="product-item__bottom">
+              <div class="products-counter">
+                <div class="products-counter__count">1</div>
+                <div class="products-counter__handlers">
+                  <div class="products-counter__handler handler-up">
+                        <svg class="icon icon-chev-up ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-up"></use>
+                        </svg>
+                  </div>
+                  <div class="products-counter__handler handler-down">
+                        <svg class="icon icon-chev-down ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-down"></use>
+                        </svg>
+                  </div>
+                </div>
+              </div><a href="#" class="button button-empty button-mini"><span>в корзину</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+              <svg class="icon icon-heart-fill ">
+                <use xlink:href="img/icons-svg/symbol/sprite.svg#heart-fill"></use>
+              </svg><a href="#" class="product-item__img"><img src="img/product.jpg" alt="alt"></a><a href="#" class="product-item__title link">Сумка для инструмента GROSS</a>
+          <p class="product-item__descr">Handwerker, 42 кармана, пластик. дно, наплечный ремень</p>
+          <div class="product-item__price-block">
+            <div class="product-item__price">2300 <span class="ruble">Р</span></div>
+            <div class="product-item__rating">
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                    </svg>
+              </div>
+            </div>
+          </div>
+          <div class="product-item__float">
+            <div class="product-item__bottom">
+              <div class="products-counter">
+                <div class="products-counter__count">1</div>
+                <div class="products-counter__handlers">
+                  <div class="products-counter__handler handler-up">
+                        <svg class="icon icon-chev-up ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-up"></use>
+                        </svg>
+                  </div>
+                  <div class="products-counter__handler handler-down">
+                        <svg class="icon icon-chev-down ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-down"></use>
+                        </svg>
+                  </div>
+                </div>
+              </div><a href="#" class="button button-empty button-mini"><span>в корзину</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-item">
+              <svg class="icon icon-heart-fill ">
+                <use xlink:href="img/icons-svg/symbol/sprite.svg#heart-fill"></use>
+              </svg><a href="#" class="product-item__img"><img src="img/product.jpg" alt="alt"></a><a href="#" class="product-item__title link">Сумка для инструмента GROSS</a>
+          <p class="product-item__descr">Handwerker, 42 кармана, пластик. дно, наплечный ремень</p>
+          <div class="product-item__price-block">
+            <div class="product-item__price">2300 <span class="ruble">Р</span></div>
+            <div class="product-item__rating">
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star-active ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star-active"></use>
+                    </svg>
+              </div>
+              <div class="rating-star">
+                    <svg class="icon icon-rate-star ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                    </svg>
+              </div>
+            </div>
+          </div>
+          <div class="product-item__float">
+            <div class="product-item__bottom">
+              <div class="products-counter">
+                <div class="products-counter__count">1</div>
+                <div class="products-counter__handlers">
+                  <div class="products-counter__handler handler-up">
+                        <svg class="icon icon-chev-up ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-up"></use>
+                        </svg>
+                  </div>
+                  <div class="products-counter__handler handler-down">
+                        <svg class="icon icon-chev-down ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-down"></use>
+                        </svg>
+                  </div>
+                </div>
+              </div><a href="#" class="button button-empty button-mini"><span>в корзину</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="warranty">
+      <div class="container">
+        <div class="title-wrapper">
+          <h2>Наши гарантии</h2>
+        </div>
+      </div>
+      <div class="container warranty-items">
+        <div class="warranty-item">
+              <svg class="icon icon-calendar ">
+                <use xlink:href="img/icons-svg/symbol/sprite.svg#calendar"></use>
+              </svg>
+          <div class="warranty-item__title">Гарантия сроков</div>
+          <p>Все заказы отправляются в течении <span>3 суток с момента заказа</span></p>
+        </div>
+        <div class="warranty-item">
+              <svg class="icon icon-like ">
+                <use xlink:href="img/icons-svg/symbol/sprite.svg#like"></use>
+              </svg>
+          <div class="warranty-item__title">Гарантия качества</div>
+          <p>Мы продаем только сертифицированные <span>Товары от проверенных производителей</span></p>
+        </div>
+        <div class="warranty-item">
+          <div class="icon icon-best-price"></div>
+          <div class="warranty-item__title">Гарантия качества</div>
+          <p>Мы продаем только сертифицированные <span>Товары от проверенных производителей</span></p>
+        </div>
+      </div>
+    </section>
+    <section class="special-offer">
+      <div class="container">
+        <div class="special-offer__inner">
+          <div class="special-offer__head">Специальное предложение для юридических лиц</div><a href="#" class="button button-blue button-empty-wht"><span>подробнее</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="in-figures">
+      <div class="container gray-bg">
+        <div class="title-wrapper">
+          <h2>Мы в цифрах</h2>
+        </div>
+      </div>
+      <div class="container in-figures__items gray-bg">
+        <div class="in-figures-item">
+          <div class="in-figures-item__digs">10 000 <span>+</span></div>
+          <p>товаров <span>в каталоге</span></p>
+        </div>
+        <div class="in-figures-item">
+          <div class="in-figures-item__digs">10 % <span>+</span></div>
+          <p>разница между оптовыми <span>и розничными ценами</span></p>
+        </div>
+        <div class="in-figures-item">
+          <div class="in-figures-item__digs">250 <span>+</span></div>
+          <p>постоянных <span>клиентов</span></p>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <div class="title-wrapper title-wrapper--to-slider-nav">
+          <h2>Отзывы</h2>
+          <div class="slider-arrows"></div>
+        </div>
+      </div>
+      <div class="container reviews-slider">
+        <div class="reviews-item">
+          <div class="reviews-item__left"><img src="img/reviews/letter.jpg" alt="alt"></div>
+          <div class="reviews-item__right">
+            <div class="reviews-item__user">
+              <div class="reviews-item__portrait"><img src="img/reviews/user.jpg" alt="alt"></div>
+              <div class="reviews-item__info">
+                <div class="reviews-item__title">ООО «Витамины леса»</div>
+                <div class="reviews-item__name">Марина Викарчук</div>
+                <div class="reviews-item__position">генеральный директор</div>
+                <p>С командой "Инструментального дома" было легко найти общий язык и работать. Сотрудники стремятся к достижению максимального результат со своей стороны. Выражаем огромную благодарность за работу!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-item">
+          <div class="reviews-item__left"><img src="img/reviews/letter.jpg" alt="alt"></div>
+          <div class="reviews-item__right">
+            <div class="reviews-item__user">
+              <div class="reviews-item__portrait"><img src="img/reviews/user.jpg" alt="alt"></div>
+              <div class="reviews-item__info">
+                <div class="reviews-item__title">ООО «Витамины леса»</div>
+                <div class="reviews-item__name">Марина Викарчук</div>
+                <div class="reviews-item__position">генеральный директор</div>
+                <p>С командой "Инструментального дома" было легко найти общий язык и работать. Сотрудники стремятся к достижению максимального результат со своей стороны. Выражаем огромную благодарность за работу!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-item">
+          <div class="reviews-item__left"><img src="img/reviews/letter.jpg" alt="alt"></div>
+          <div class="reviews-item__right">
+            <div class="reviews-item__user">
+              <div class="reviews-item__portrait"><img src="img/reviews/user.jpg" alt="alt"></div>
+              <div class="reviews-item__info">
+                <div class="reviews-item__title">ООО «Витамины леса»</div>
+                <div class="reviews-item__name">Марина Викарчук</div>
+                <div class="reviews-item__position">генеральный директор</div>
+                <p>С командой "Инструментального дома" было легко найти общий язык и работать. Сотрудники стремятся к достижению максимального результат со своей стороны. Выражаем огромную благодарность за работу!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container reviews-bottom"><a href="#">Смотреть все отзывы</a></div>
+    </section>
+    <section class="subscribe">
+      <div class="container">
+        <div class="title-wrapper">
+          <h2>Подпишитесь на нашу рассылку - читайте свежие новости
+            <div>о скидках и получите в подарок 500 руб.*</div>
+          </h2>
+        </div>
+        <form action="#" class="subscribe-form">
+          <label class="standart-label">
+            <input type="text" name="name" placeholder="Имя">
+          </label>
+          <label class="standart-label">
+            <input type="text" name="phone-mail" placeholder="E-mail или телефон">
+          </label>
+          <button type="submit" class="button button-orange"><span>Подписаться</span></button>
+        </form>
+      </div>
+      <div class="container subscribe-bottom">
+        <p>Отправляя свои данные вы соглашаетесь на обработку <a href="#" class="blue-link">персональных данных</a></p>
+        <p>*Подарок зачисляется на счет пользователя и используется при оплате товаров.</p>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer-top no-pd-480">
+        <div class="footer-item footer-item--links">
+          <div class="footer-item__title">О КОМПАНИИ</div>
+          <div class="footer-item__menu">
+            <ul>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Акции</a></li>
+              <li><a href="#">Условия работы</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-item footer-item--soc">
+          <div class="footer-item__title">МЫ В СОЦСЕТЯХ</div>
+          <div class="footer-socials"><a href="#" class="icon icon-quote"></a><a href="#" class="icon icon-vk"></a><a href="#" class="icon icon-fb"></a><a href="#" class="icon icon-tg"></a><a href="#" class="icon icon-viber"></a></div>
+        </div>
+        <div class="footer-item footer-item--contacts">
+          <div class="footer-item__title">КОНТАКТЫ</div>
+          <p>г. Нижний Новгород, ул.Ногина д.6 «А»</p>
+          <p>Пн-Пт с 9:00 до 18:00. Суббота, воскресенье выходной</p>
+          <p>+7(831)413-31-72 +7(831)273-85-71</p>
+          <p>номера документации (ИНН, ОГРН, ЕГРЮЛ и т.п.)</p>
+        </div>
+        <div class="footer-item footer-item--hidden"><a href="#callback-popup" class="header-contacts__callback button button-empty button-mini callback-show"><span>Заказать звонок</span></a><a href="tel:88001231212" class="header-contacts__phone">8 800 <span>123 12 12</span></a></div>
+      </div>
+      <div class="container footer-bottom">
+        <div class="footer-copyright">© 2018 —  «Инструментальный дом»</div>
+        <div>Разработка сайта — <a href="#">Denir</a></div>
+      </div>
+    </footer>
+    <div id="search-popup" class="popup-search mfp-hide white-popup-block">
+      <form action="#">
+        <label class="header-search">
+          <input type="text" name="search" placeholder="Поиск по сайту">
+              <svg class="icon icon-magnifier ">
+                <use xlink:href="img/icons-svg/symbol/sprite.svg#magnifier"></use>
+              </svg>
+              <svg class="icon icon-enter ">
+                <use xlink:href="img/icons-svg/symbol/sprite.svg#enter"></use>
+              </svg>
+        </label>
+      </form>
+    </div>
+    <div id="price-list-popup" class="popup-price-list mfp-hide white-popup-block">
+      <div class="price-download__form">
+        <div class="price-download__title">Скачайте прайс-лист и получите
+          <div>в подарок 500 р.</div>
+        </div>
+        <form action="#">
+          <label class="standart-label">
+            <input type="text" name="email-phone" placeholder="E-mail или телефон" required>
+          </label>
+          <label class="standart-label">
+            <input type="text" name="name" placeholder="Имя" required>
+          </label>
+          <button type="submit" class="button button-orange"><span>Скачать прайс-лист</span></button>
+        </form>
+        <div class="price-download__bottom">Отправляя свои данные, вы соглашаетесь на обработку <a href="#">Персональных данных</a></div>
+      </div>
+    </div>
+    <div id="callback-popup" class="popup-callback mfp-hide white-popup-block">
+      <div class="price-download__form">
+        <div class="price-download__title">Заказать звонок</div>
+        <form action="#">
+          <label class="standart-label">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+          </label>
+          <label class="standart-label">
+            <input type="text" name="phone" placeholder="Телефон" required>
+          </label>
+          <button type="submit" class="button button-orange"><span>Заказать звонок</span></button>
+        </form>
+        <div class="price-download__bottom">Отправляя свои данные, вы соглашаетесь на обработку <a href="#">Персональных данных</a></div>
+      </div>
+    </div>
+    <div id="manager-write-popup" class="popup-write-manager mfp-hide white-popup-block">
+      <div class="price-download__form">
+        <div class="price-download__title">Написать менеджеру</div>
+        <form action="#">
+          <label class="standart-label">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+          </label>
+          <label class="standart-label">
+            <input type="text" name="phone" placeholder="Телефон" required>
+          </label>
+          <label class="standart-label">
+            <input type="text" name="phone" placeholder="Email" required>
+          </label>
+          <label class="standart-label">
+            <textarea name="" placeholder="Ваш вопрос"></textarea>
+          </label>
+          <button type="submit" class="button button-orange"><span>Заказать звонок</span></button>
+        </form>
+        <div class="price-download__bottom">Отправляя свои данные, вы соглашаетесь на обработку <a href="#">Персональных данных</a></div>
+      </div>
+    </div>
+    <div id="rating-manager-popup" class="popup-manager-rating mfp-hide white-popup-block">
+      <div class="price-download__form">
+        <div class="price-download__title">Оцените работу менеджера</div>
+        <div class="manager-photo"><img src="img/manager.jpg" alt="alt"></div>
+        <div class="manager-info">
+          <div class="manager-info__top">
+            <div class="manager-info__name">Симонова Екатерина</div>
+            <div>Менеджер по работе с юридическими лицами</div>
+          </div>
+        </div>
+        <div class="popup-manager-rating__to-mark">Поставьте вашу оценку</div>
+        <div class="product-item__rating product-item__rating--big">
+          <div class="rating-star">
+                <svg class="icon icon-rate-star ">
+                  <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                </svg>
+          </div>
+          <div class="rating-star">
+                <svg class="icon icon-rate-star ">
+                  <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                </svg>
+          </div>
+          <div class="rating-star">
+                <svg class="icon icon-rate-star ">
+                  <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                </svg>
+          </div>
+          <div class="rating-star">
+                <svg class="icon icon-rate-star ">
+                  <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                </svg>
+          </div>
+          <div class="rating-star">
+                <svg class="icon icon-rate-star ">
+                  <use xlink:href="img/icons-svg/symbol/sprite.svg#rate-star"></use>
+                </svg>
+          </div>
+        </div>
+        <button type="submit" class="button button-orange"><span>Отправить</span></button>
+      </div>
+    </div>
+    <div id="enter-popup" class="popup-enter mfp-hide white-popup-block">
+      <ul class="tabs__list">
+        <li class="tabs__item tabs__item--active"><a href="#autorisation" class="tabs__link">Авторизация</a></li>
+        <li class="tabs__item"><a href="#registration" class="tabs__link">Регистрация</a></li>
+      </ul>
+      <ul class="tabs-content">
+        <li id="autorisation" class="tabs__item enter-popup__tabs-item">
+          <div class="popup-divider">Войти с помощью</div>
+          <ul class="popup-socials">
+            <li><a href="#" class="pop-soc-icon vk-popup"></a></li>
+            <li><a href="#" class="pop-soc-icon fb-popup"></a></li>
+            <li><a href="#" class="pop-soc-icon ok"></a></li>
+            <li><a href="#" class="pop-soc-icon google"></a></li>
+            <li><a href="#" class="pop-soc-icon inst"></a></li>
+            <li><a href="#" class="pop-soc-icon mail"></a></li>
+          </ul>
+          <div class="popup-divider">или</div>
+          <form action="#" class="enter-form">
+            <label class="standart-label">
+              <input type="text" name="name" placeholder="Ваше имя" required>
+            </label>
+            <label class="standart-label">
+              <input type="text" name="phone" placeholder="Телефон" required>
+            </label>
+            <div class="enter-form__forget"><a href="#" class="link">Забыли пароль?</a><a href="#" class="button button-blue button-mini button-not-bordered"><span>войти</span></a></div>
+            <div class="enter-form__while">Ещё не зарегистрированы? <a href="#" class="link">Зарегистрироваться</a></div>
+          </form>
+        </li>
+        <li id="registration" class="tabs__item enter-popup__tabs-item hidden">
+          <div class="popup-divider">Войти с помощью</div>
+          <ul class="popup-socials">
+            <li><a href="#" class="pop-soc-icon vk-popup"></a></li>
+            <li><a href="#" class="pop-soc-icon fb-popup"></a></li>
+            <li><a href="#" class="pop-soc-icon ok"></a></li>
+            <li><a href="#" class="pop-soc-icon google"></a></li>
+            <li><a href="#" class="pop-soc-icon inst"></a></li>
+            <li><a href="#" class="pop-soc-icon mail"></a></li>
+          </ul>
+          <div class="popup-divider">или</div>
+          <form action="#" class="enter-form">
+            <label class="standart-label">
+              <input type="text" name="name" placeholder="Ваше имя" required>
+            </label>
+            <label class="standart-label">
+              <input type="text" name="phone" placeholder="Телефон" required>
+            </label>
+            <label class="custom-checkbox-label policy-label">
+              <input type="checkbox"><span class="custom-checkbox"></span><span>Согласен с политикой конфиденциальности</span>
+            </label>
+            <div class="enter-form__bottom"><a href="#" class="button button-orange button-mini"><span>зарегистрироваться</span></a></div>
+            <div class="enter-form__while">Уже зарегистрированы? <a href="#" class="link">Войти</a></div>
+          </form>
+        </li>
+      </ul>
+    </div>
+    <div class="tooltip-templates">
+      <div id="conditions-tooltip" class="tooltip-conditions">
+        <div class="container container-wide gray-bg">
+          <div class="conditions-item">
+                <svg class="icon icon-contract ">
+                  <use xlink:href="img/icons-svg/symbol/sprite.svg#contract"></use>
+                </svg>
+            <div class="conditions-item__title">Работаем по договору</div>
+            <p>Главная; Работаем по договору. Имеем большой положительный опыт работы с государственными, муниципальными и коммерческими заказчиками </p>
+          </div>
+          <div class="conditions-item">
+                <svg class="icon icon-delivery-man ">
+                  <use xlink:href="img/icons-svg/symbol/sprite.svg#delivery-man"></use>
+                </svg>
+            <div class="conditions-item__title">Бесплатная доставка<br>от 5000 руб.</div>
+            <p>Главная; Работаем по договору. Имеем большой положительный опыт работы с государственными, муниципальными и коммерческими заказчиками </p>
+          </div>
+          <div class="conditions-item">
+                <svg class="icon icon-tag ">
+                  <use xlink:href="img/icons-svg/symbol/sprite.svg#tag"></use>
+                </svg>
+            <div class="conditions-item__title">Скидки оптовым клиентам</div>
+            <p>Главная; Работаем по договору. Имеем большой положительный опыт работы с государственными, муниципальными и коммерческими заказчиками </p>
+          </div>
+          <div class="conditions-item">
+                <svg class="icon icon-card-payment ">
+                  <use xlink:href="img/icons-svg/symbol/sprite.svg#card-payment"></use>
+                </svg>
+            <div class="conditions-item__title">Различные способы оплаты</div>
+            <p>Главная; Работаем по договору. Имеем большой положительный опыт работы с государственными, муниципальными и коммерческими заказчиками </p>
+          </div>
+        </div>
+      </div>
+      <div id="cart-tooltip" class="tooltip-cart">
+        <div class="tooltip-cart__header">Ваша корзина
+          <div><span class="tooltip-cart__prod-count">6</span> товаров на сумму <span class="tooltip-cart__total-price">6600 р.</span></div>
+        </div>
+        <div class="tooltip-cart__item">
+          <div class="tooltip-cart__img"><img src="img/cart-tooltip-prod.jpg" alt="alt"></div>
+          <div class="tooltip-cart__text"><a href="#" class="tooltip-cart__name">Кисть плоская Евро натуральная, светлая щетина 250 мм </a>
+            <div class="tooltip-cart__info">
+              <div class="tooltip-cart__count">3 шт.</div><span></span>
+              <div class="tooltip-cart__price">3300 p.</div>
+            </div>
+          </div>
+        </div>
+        <div class="tooltip-cart__item">
+          <div class="tooltip-cart__img"><img src="img/cart-tooltip-prod.jpg" alt="alt"></div>
+          <div class="tooltip-cart__text"><a href="#" class="tooltip-cart__name">Кисть плоская Евро натуральная, светлая щетина 250 мм </a>
+            <div class="tooltip-cart__info">
+              <div class="tooltip-cart__count">3 шт.</div><span></span>
+              <div class="tooltip-cart__price">3300 p.</div>
+            </div>
+          </div>
+        </div>
+        <div class="tooltip-cart__item">
+          <div class="tooltip-cart__img"><img src="img/cart-tooltip-prod.jpg" alt="alt"></div>
+          <div class="tooltip-cart__text"><a href="#" class="tooltip-cart__name">Кисть плоская Евро натуральная, светлая щетина 250 мм </a>
+            <div class="tooltip-cart__info">
+              <div class="tooltip-cart__count">3 шт.</div><span></span>
+              <div class="tooltip-cart__price">3300 p.</div>
+            </div>
+          </div>
+        </div>
+        <div class="tooltip-cart__bottom"><a href="#" class="button button-orange button-mini"><span>ОФОРМИТЬ</span></a></div>
+        <div class="custom-scroll-advanced_track-y"><span class="custom-scroll-arrow top"></span><span class="custom-scroll-arrow bottom"></span></div>
+      </div>
+      <div id="cart-tooltip-edit" class="tooltip-cart">
+        <div class="tooltip-cart__header">Ваша корзина
+          <div><span class="tooltip-cart__prod-count">6</span> товаров на сумму <span class="tooltip-cart__total-price">6600 р.</span></div>
+        </div>
+        <div class="tooltip-cart__item">
+          <div class="tooltip-cart__img"><img src="img/cart-tooltip-prod.jpg" alt="alt"></div>
+          <div class="tooltip-cart__text"><a href="#" class="tooltip-cart__name">Кисть плоская Евро натуральная, светлая щетина 250 мм </a>
+            <div class="tooltip-cart__info">
+              <div class="tooltip-cart__count">3 шт.</div><span></span>
+              <div class="tooltip-cart__price">3300 p.</div>
+            </div>
+          </div>
+        </div>
+        <div class="tooltip-cart__item">
+          <div class="tooltip-cart__img"><img src="img/cart-tooltip-prod.jpg" alt="alt"></div>
+          <div class="tooltip-cart__text"><a href="#" class="tooltip-cart__name">Кисть плоская Евро натуральная, светлая щетина 250 мм </a>
+            <div class="tooltip-cart__info">
+              <div class="tooltip-cart__count">3 шт.</div><span></span>
+              <div class="tooltip-cart__price">3300 p.</div>
+            </div>
+          </div>
+        </div>
+        <div class="tooltip-cart__item">
+          <div class="tooltip-cart__img"><img src="img/cart-tooltip-prod.jpg" alt="alt"></div>
+          <div class="tooltip-cart__text"><a href="#" class="tooltip-cart__name">Кисть плоская Евро натуральная, светлая щетина 250 мм </a>
+            <div class="tooltip-cart__info">
+              <div class="tooltip-cart__count">3 шт.</div><span></span>
+              <div class="tooltip-cart__price">3300 p.</div>
+            </div>
+          </div>
+        </div>
+        <div class="tooltip-cart__bottom"><a href="#" class="button button-orange button-mini"><span>редактировать заказ</span></a></div>
+        <div class="custom-scroll-advanced_track-y"><span class="custom-scroll-arrow top"></span><span class="custom-scroll-arrow bottom"></span></div>
+      </div>
+      <div id="cart-tooltip-favourites" class="tooltip-cart tooltip-cart-favourites">
+        <div class="tooltip-cart__header">Избранное <span class="tooltip-cart__fav-count">6</span> товаров </div>
+        <div class="tooltip-cart__item">
+          <div class="tooltip-cart__img"><img src="img/cart-tooltip-prod.jpg" alt="alt"></div>
+          <div class="tooltip-cart__text"><a href="#" class="tooltip-cart__name">Кисть плоская Евро натуральная, светлая щетина 250 мм </a>
+            <div class="tooltip-cart__info">
+              <div class="tooltip-cart__count">3 шт.</div><span></span>
+              <div class="tooltip-cart__price">3300 p.</div>
+            </div><a href="#" class="button button-blue button-mini"><span>в корзину</span></a>
+          </div>
+        </div>
+        <div class="tooltip-cart__item">
+          <div class="tooltip-cart__img"><img src="img/cart-tooltip-prod.jpg" alt="alt"></div>
+          <div class="tooltip-cart__text"><a href="#" class="tooltip-cart__name">Кисть плоская Евро натуральная, светлая щетина 250 мм </a>
+            <div class="tooltip-cart__info">
+              <div class="tooltip-cart__count">3 шт.</div><span></span>
+              <div class="tooltip-cart__price">3300 p.</div>
+            </div><a href="#" class="button button-blue button-mini"><span>в корзину</span></a>
+          </div>
+        </div>
+        <div class="tooltip-cart__item">
+          <div class="tooltip-cart__img"><img src="img/cart-tooltip-prod.jpg" alt="alt"></div>
+          <div class="tooltip-cart__text"><a href="#" class="tooltip-cart__name">Кисть плоская Евро натуральная, светлая щетина 250 мм </a>
+            <div class="tooltip-cart__info">
+              <div class="tooltip-cart__count">3 шт.</div><span></span>
+              <div class="tooltip-cart__price">3300 p.</div>
+            </div><a href="#" class="button button-blue button-mini"><span>в корзину</span></a>
+          </div>
+        </div>
+        <div class="custom-scroll-advanced_track-y"><span class="custom-scroll-arrow top"></span><span class="custom-scroll-arrow bottom"></span></div>
+      </div>
+      <div id="registered-tip" class="tooltip-registered-user">
+        <ul>
+          <li><a href="#">Профиль</a></li>
+          <li><a href="#">Мои заказы<span>(0)</span></a></li>
+          <li><a href="#">Избранное<span>(4)</span></a></li>
+          <li><a href="#">Корзина<span>(0)</span></a></li>
+          <li><a href="#">Персональные скидки</a></li>
+          <li><a href="#">Выход</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="hidden"></div>
+    <div class="loader">
+      <div class="loader_inner"></div>
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/svg4everybody/svg4everybody.min.js" async onload="svg4everybody();"></script>
+  </body>
+</html>
